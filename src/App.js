@@ -2,7 +2,7 @@ import React from 'react';
 import * as axios from 'axios';
 import './App.css';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3000';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3001';
 
 const fetchMessages = async () => {
   const response = await axios.get(`${BACKEND_URL}/messages`);
